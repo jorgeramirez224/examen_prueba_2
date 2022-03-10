@@ -1,0 +1,19 @@
+ floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          FloatingActionButton(
+            onPressed: () {
+              controllerZoomImage.increaseZoomImage();
+            },
+              child: const Icon(Icons.add),
+              backgroundColor: Colors.blue,
+          ),
+          FloatingActionButton(
+            onPressed: () {
+              controllerZoomImage.decreaseZoomImage();
+            },
+            child: const Icon(Icons.remove),
+            backgroundColor: Colors.red,
+          ),
+        ],
+      ),
